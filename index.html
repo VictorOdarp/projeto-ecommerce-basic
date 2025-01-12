@@ -1,160 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e243738caa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Games E-commerce</title>
 </head>
 <body>
     <header class="cabecalho">
         <section class="cabecalho__conteudo">
-            <h1>Alura Geek</h1>
+            <h1>❤️ ❤️ ❤️ E-commerce</h1>
         </section>
     </header>
     <main>
-        <section class="container__produtos">
-            <article class="container__produtos__conteudo">
-                <div class="produto__imagem">
-                    <img src="img/ps5.png" alt="Playstation 5">
-                </div>
-
-                <div class="produto__descricao">
-                    <h2>Playstation 5</h2>
-                </div>
-
-                <div class="produto__preco">
-
-                    <div class="produto__preco__valor">
-                        <p>R$ 4.999,00</p>
-                    </div>
-
-                    <div class="produto__preco__botao">
-                        <p>lixeira</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="container__produtos__conteudo">
-                <div class="produto__imagem">
-                    <img src="img/ps5.png" alt="Playstation 5">
-                </div>
-
-                <div class="produto__descricao">
-                    <h2>Playstation 5</h2>
-                </div>
-
-                <div class="produto__preco">
-                    <div class="produto__preco__valor">
-                        <p>R$ 4.999,00</p>
-                    </div>
-
-                    <div class="produto__preco__botao">
-                        <p>lixeira</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="container__produtos__conteudo">
-                <div class="produto__imagem">
-                    <img src="img/ps5.png" alt="Playstation 5">
-                </div>
-
-                <div class="produto__descricao">
-                    <h2>Playstation 5</h2>
-                </div>
-
-                <div class="produto__preco">
-                    <div class="produto__preco__valor">
-                        <p>R$ 4.999,00</p>
-                    </div>
-
-                    <div class="produto__preco__botao">
-                        <p>lixeira</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="container__produtos__conteudo">
-                <div class="produto__imagem">
-                    <img src="img/ps5.png" alt="Playstation 5">
-                </div>
-
-                <div class="produto__descricao">
-                    <h2>Playstation 5</h2>
-                </div>
-
-                <div class="produto__preco">
-                    <div class="produto__preco__valor">
-                        <p>R$ 4.999,00</p>
-                    </div>
-
-                    <div class="produto__preco__botao">
-                        <p>lixeira</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="container__produtos__conteudo">
-                <div class="produto__imagem">
-                    <img src="img/ps5.png" alt="Playstation 5">
-                </div>
-
-                <div class="produto__descricao">
-                    <h2>Playstation 5</h2>
-                </div>
-
-                <div class="produto__preco">
-
-                    <div class="produto__preco__valor">
-                        <p>R$ 4.999,00</p>
-                    </div>
-
-                    <div class="produto__preco__botao">
-                        <p>lixeira</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="container__produtos__conteudo">
-                <div class="produto__imagem">
-                    <img src="img/ps5.png" alt="Playstation 5">
-                </div>
-
-                <div class="produto__descricao">
-                    <h2>Playstation 5</h2>
-                </div>
-
-                <div class="produto__preco">
-
-                    <div class="produto__preco__valor">
-                        <p>R$ 4.999,00</p>
-                    </div>
-
-                    <div class="produto__preco__botao">
-                        <p>lixeira</p>
-                    </div>
-                </div>
-            </article>
+        <section class="container__produtos" data-lista>
         </section>
 
         <section class="container__cadastroProduto">
-            <form>
-                <div class="cadastroProduto__campo">
-                    <input type="text" id="nome" name="nome" placeholder="Nome...">
+            <form class="formulario__cadastroProduto" data-formulario>
+                <div class="cadastroProduto__campo"> 
+                    <input type="text" id="nome" name="nome" placeholder="Nome..." maxlength="10" data-nome required>
                 </div>    
 
                 <div class="cadastroProduto__campo">
-                    <input type="text" id="nome" name="nome" placeholder="Valor...">
+                    <input type="text" id="nome" name="nome" placeholder="Valor..." data-preco required>
                 </div> 
 
                 <div class="cadastroProduto__campo">
-                    <input type="text" id="nome" name="nome" placeholder="Imagem...">
+                    <input type="text" id="nome" name="nome" placeholder="Imagem..." data-imagem required>
                 </div> 
 
                 <div class="cadastroProduto__botoes">
                     <div class="cadastroProduto__botoes__salvar">
-                        <button>Guardar</button>
+                        <button type="submit">Guardar</button>
                     </div>
                     
                     <div class="cadastroProduto__botoes__limpar">
@@ -164,6 +43,25 @@
             </form>
         </section>
     </main>
-    <footer></footer>
+    <footer class="rodape">
+        <section class="rodape__conteudo">
+            <div>
+                <h2>❤️ ❤️ ❤️ E-commerce</h2>
+            </div>
+
+            <div>
+                <p>Desenvolvido por Victor Eduardo</p>
+            </div>
+            
+            <div>
+                <p>E-commerce - 2025</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/conectaAPI.js" type="module"></script>
+    <script src="js/mostraProdutos.js" type="module"></script>
+    <script src="js/criaProduto.js" type="module"></script>
+    <script src="js/deletaProduto.js" type="module"></script>
 </body>
 </html>
